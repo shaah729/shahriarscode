@@ -4,21 +4,6 @@ pipeline {
         stage('build') {
             steps {
                 sh 'mvn --version'
-                echo 'building the application1'
-            }
-        }
-      
-       stages {
-        stage('test') {
-            steps {
-                sh 'mvn --version'
-            }
-        }
-         
-          stages {
-        stage('deploy') {
-            steps {
-                sh 'mvn --version'
             }
         }
     }
